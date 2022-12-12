@@ -15,12 +15,12 @@ const Navbar = () => {
 
    <Stack direction='row' gap='1rem' alignItems= 'flex-end' fontWeight='bold' >
     <Link to='/'  className='sink'
-    style={{ textDecoration:'none',background:'#222222',borderRadius:'.5rem', 
+    style={{ textDecoration:'none',background:'#222222',borderRadius:'.25rem',letterSpacing: '0.02rem', 
           fontSize:'.9rem',padding:'.4rem',color: '#F9E2B8'}}>Home</Link>
     <a href="#exercises"  className='sink' 
     style={{textDecoration: 'none', color:'#753422', 
            border:'1px solid #753422',
-           borderRadius:'.5rem', padding:'.4rem',fontSize:'0.9rem'
+           borderRadius:'.25rem', padding:'.4rem',fontSize:'0.9rem',letterSpacing: '0.02rem'
             }}>Exercises</a>
    </Stack>
 

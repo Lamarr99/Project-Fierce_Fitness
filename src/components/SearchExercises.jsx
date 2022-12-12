@@ -103,4 +103,4 @@ theme = responsiveFontSizes(theme);
    );
    };
 
-export default SearchExercises
+export default SearchExercises;

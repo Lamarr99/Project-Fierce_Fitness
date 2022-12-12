@@ -52,7 +52,7 @@ const HeroBanner = () => {
         <ThemeProvider theme={theme}>
            <Button variant="contained"
               href='#exercises' size='small'
-              sx={{ padding:'1rem',color:'#F9E2B8', fontFamily:'Work Sans',borderRadius:'1.8rem' ,
+              sx={{ padding:'1rem',color:'#F9E2B8', fontFamily:'Work Sans',borderRadius:'.25rem' ,
                '&:hover':{backgroundColor: 'primary.dark', color:'#F9E2B8' },
                width:`200px`, height:{xs:'2rem', sm:'2.5rem',lg:'3rem' }, 
                position:'relative'}} >

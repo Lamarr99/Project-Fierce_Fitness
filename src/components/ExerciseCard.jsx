@@ -16,14 +16,14 @@ const ExerciseCard = ({ exercise }) => {
     <Button  sx={{  color:'#FEFFDE', background: '#753422', display: 'inline-block',
       '&:hover': { bgcolor: '#753422' },p:'.2rem .4rem',
       fontSize:{xs:'.8rem', sm: '1rem'},height:'min-content' , fontFamily:'Work sans',
-      width: 'max-content', borderRadius:'.5rem', textTransform:'capitalize'
+      width: 'max-content', borderRadius:'.25rem', textTransform:'capitalize'
     }}>
         {exercise.bodyPart}
     </Button>
 
     <Button  sx={{ color:'#753422',bgcolor:'#F9E2B8',
       fontSize: {xs:'.8rem', sm: '1rem'} , fontFamily:'Work sans',
-      borderRadius:'.5rem', width: 'min-content',
+      borderRadius:'.25rem', width: 'min-content',
       '&:hover':{ bgcolor:'#F9E2B8'},p:'.2rem .4rem',
       height:'min-content' , textTransform:'capitalize'  
       }}>
