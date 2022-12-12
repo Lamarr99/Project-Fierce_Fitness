@@ -3,9 +3,32 @@
 
 body {
   font-family: 'Work Sans';
-  background-color: #F9E2B8;
-  color: #753422;
-  /* max-width: 100vw !important; */
+  /* background-color: #F9E2B8; */
+  
+  background: linear-gradient(41deg, #f9e2b8, #fff8e8);
+  background-size: 400% 400%;
+
+  -webkit-animation: fierce_gradient 2s ease infinite;
+  -moz-animation: fierce_gradient 2s ease infinite;
+  animation: fierce_gradient 2s ease infinite;
+
+  color: #423412;
+}
+
+@-webkit-keyframes fierce_gradient {
+  0%{background-position:0% 46%}
+  50%{background-position:100% 55%}
+  100%{background-position:0% 46%}
+}
+@-moz-keyframes fierce_gradient {
+  0%{background-position:0% 46%}
+  50%{background-position:100% 55%}
+  100%{background-position:0% 46%}
+}
+@keyframes fierce_gradient {
+  0%{background-position:0% 46%}
+  50%{background-position:100% 55%}
+  100%{background-position:0% 46%}
 }
 
 * {
@@ -79,11 +102,11 @@ justify-content: center;
 
 .hero-banner-img {
   position: absolute;
-  right: 40px;
+  right: 2rem;
   top: 0px;
-  width: 650px;
-  height: 900px;
-  margin-top: -8rem;
+  width: 500px;
+  height: 700px;
+  margin-top: -7rem;
   z-index: 10;
 
 }
@@ -113,6 +136,14 @@ justify-content: center;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
+/* Swiper
+.swiper-pagination-bullet {
+  background-color: var(--text-color) !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color) !important;
+
+} */
 
 .exercise-card:hover
  {
@@ -169,9 +200,20 @@ justify-content: center;
 
 @media screen and (max-width:400px) {
   .exercise-card {
-    width: 280px;
+    width: 80vw;
+    height: 400px;
+  }
+  .exercise-video {
+    width: 90vw;
+    height: 300px;
+  }
+  .detail-image {
+    width: 80vw;
+    height: 400px;
   }
 }
+
+
 
 .sink {
   display: inline-block;

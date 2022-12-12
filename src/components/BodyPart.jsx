@@ -1,11 +1,9 @@
 import React from 'react'
-import { Stack,Typography } from '@mui/material'
-import Icon from '../assets/icons/gym.png';
+import {Stack, Typography } from '@mui/material'
+import Cardio from '../assets/icons/equipment.png'
 
-
-
-const BodyPart = ({item, setBodyPart, bodyPart}) => {
-  return (
+const BodyPart = ({item, setBodyPart, bodyPart}) => (
+  
     <Stack
     type='button'
     alignItems='center'
@@ -19,17 +17,19 @@ const BodyPart = ({item, setBodyPart, bodyPart}) => {
     my:'2rem',
     gap:'47px' }}
 
-    onClick={()=> {
+    onClick={() => {
         setBodyPart(item);
         window.scrollTo({top: 1800, left: 100, behavior:'smooth'})
-    }} >
-      <img src={Icon} alt="dumbbell" style={{ width:'40px', height:'40px' }} /> 
-        <Typography fontFamily='Montserrat' fontSize='1.2rem' fontWeight='bold' color='#753422' 
-          textTransform='capitalize' >
-            {item}
-        </Typography>
-  </Stack>
-  )
-}
+    }}>
+      <img src={Cardio} alt={item} style={{ width:'40px', height:'40px' }} />
+     
+      <Typography fontFamily='Montserrat' fontSize='1.2rem' fontWeight='bold' color='#753422' 
+      textTransform='capitalize' >
+       {item}
+      </Typography>
+      </Stack>
+    
+    
+);
 
-export default BodyPart
+export default BodyPart;

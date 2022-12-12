@@ -26,25 +26,25 @@ const Detail = ({exerciseDetail}) => {
     ];
 
   return (
-<Stack gap='60px' sx={{ flexDirection: {lg: 'row'}, p:'20px', alignItems:'center'}}>
-        <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />    
+<Stack gap='3rem' sx={{ flexDirection: {md: 'row'}, p:'1.5rem',justifyContent: { xs:'center', md:'space-between'   } , alignItems:'center'}}>
+        <img src={gifUrl} alt={name} className='detail-image' />    
 
     <Stack sx={{ gap: {lg: '2rem', xs:'1rem'} }}>
-        <Typography  variant='h4' fontWeight={700} textTransform="capitalize">
+        <Typography fontFamily='Montserrat' variant='h5' fontWeight={600} textTransform="capitalize">
         {name}
         </Typography>
 
-        <Typography variant='body1'fontFamily='Laila'  color="#4F4C4C" >
+        <Typography variant='subtitle1'fontFamily='Work sans' fontWeight='500'   >
             Exercises keep you strong. <span style={{textTransform:'capitalize'}}>{name}</span>{' '} is one of the best exercises to target your {target}. It will help 
             improve your health and vitality. 
         </Typography>
 
         {extraDetail?.map((item) => (
         <Stack key={item.name}  direction='row' gap='24px' alignItems='center'>
-            <Button sx={{ background:'#fff2db', borderRadius:'50%', width:'7rem', height:'7rem' }}>
-                <img src={item.icon} alt={bodyPart} loading='lazy'  style={{ width: '50px', height:'50px'  }} />
+            <Button sx={{ background:'#fff2db', borderRadius:'50%', width:'4rem', height:'4rem' }}>
+                <img src={item.icon} alt={bodyPart} style={{ width: '50px', height:'50px'  }} />
             </Button >
-            <Typography textTransform='capitalize'fontFamily='Work Sans' variant='h5'>
+            <Typography textTransform='capitalize'fontFamily='Work Sans' variant='h6'>
              {item.name}
             </Typography>
         </Stack>

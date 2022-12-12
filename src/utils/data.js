@@ -10,55 +10,66 @@ import Waist from '../assets/icons/waist.png'
 import LowerArm from '../assets/icons/lower-arm.png'
 import UpperArm from '../assets/icons/upper-arm.png'
 
-const bodyImage = [
-    {
-        image: {All},
+const BodyImage = [
+    {   
+        id: 1,
+        image: All,
         title: 'All',
     },
-    {
-        image: {Back},
+    {   
+        id: 2,
+        image: Back,
         title: 'Back',
     },
-    {
-        image: {Cardio},
+    {   
+        id: 3,
+        image: Cardio,
         title: 'Cardio',
     },
-    {
-        image: {Chest},
+    {   
+        id: 4,
+        image: Chest,
         title: 'Chest',
     },
-    {
-        image: {Calf},
+    {   
+        id: 5,
+        image: Calf,
         title: 'Calf',
     },
-    {
-        image: {LowerArm},
+    {   
+        id: 6,
+        image: LowerArm,
         title: 'Lower Arm',
     },
-    {
-        image: {Neck},
+    {   
+        id: 7,
+        image: Neck,
         title: 'Neck',
     },
-    {
-        image: {Shoulders},
+    {   
+        id: 8,
+        image: Shoulders,
         title: 'Shoulders',
     },
-    {
-        image: {UpperLeg},
+    {   
+        id: 9,
+        image: UpperLeg,
         title: 'Upper Leg',
     }, 
 
-    {
-        image: {UpperArm},
+    {   
+        id: 10,
+        image: UpperArm,
         title: 'Upper Arm',
     },
     
-    {
-        image: {Waist},
+    {   
+        id: 11,
+        image: Waist,
         title: 'Waist',
     }
 
 
 ];
 
-export default bodyImage;
+export default BodyImage;

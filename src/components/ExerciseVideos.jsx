@@ -45,9 +45,9 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
 
     <Stack justifyContent='center' flexWrap='wrap' alignItems='center'
         sx={{
-            flexDirection: { lg:'row' }, gap: { lg:'110px', xs:'0'}
+            flexDirection: { md:'row' }, gap: { md:'3rem', xs:'2rem'}
         }} >
-            { exerciseVideos?.slice(1, 5).map((item, index) => (
+            { exerciseVideos?.slice(1, 7).map((item, index) => (
                     <a href={`https://www.youtube.com/watch?v=${item.video.videoId}`} 
                         className='exercise-video'
                         key={index}
@@ -60,7 +60,7 @@ const ExerciseVideos = ({exerciseVideos, name}) => {
                                 {item.video.title}
                                 </Typography>
                             </ThemeProvider>
-                             <Typography variant='body1' mb='1rem' p='12px' borderRadius='25px'
+                             <Typography variant='body1' mb='1rem' p='.6rem .8rem' borderRadius='1.6rem'
                                  maxWidth='fit-content' fontFamily="Work Sans" bgcolor='#222222' color='#F9E2B8'>
                                 {item.video.channelName}
                              </Typography>

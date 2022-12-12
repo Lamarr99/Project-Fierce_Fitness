@@ -12,7 +12,7 @@ const LeftArrow = () => {
 
   return (
     <Typography onClick={() => scrollPrev()} className="right-arrow">
-      <img src={LeftArrowIcon} alt="left-arrow" loading='lazy' />
+      <img src={LeftArrowIcon} alt="left-arrow" />
     </Typography>
   );
 };
@@ -22,7 +22,7 @@ const RightArrow = () => {
 
   return (
     <Typography onClick={() => scrollNext()} className="left-arrow">
-      <img src={RightArrowIcon} alt="right-arrow" loading='lazy'/>
+      <img src={RightArrowIcon} alt="right-arrow" />
     </Typography>
   );
 };
@@ -36,7 +36,7 @@ const HorizontalScrollbar = ({data, bodyPart, setBodyPart, isBodyParts}) => {
          key = { item.id || item }
          itemId = { item.id || item }
          title = { item.id || item }
-         m= '0 40px' >
+         m= '0 1rem' >
          { isBodyParts ? <BodyPart item={item} bodyPart= {bodyPart} 
           setBodyPart= {setBodyPart} /> 
          : <ExerciseCard exercise={item} />

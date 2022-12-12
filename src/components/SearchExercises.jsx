@@ -65,16 +65,16 @@ theme = responsiveFontSizes(theme);
 <Stack alignItems='center' mt='2rem' justifyContent='center'
        p='20px'  >
      <ThemeProvider theme={theme}>
-         <Typography fontWeight='600' variant='h4' sx={{mt:{sx:0, lg:'12rem'} ,
+         <Typography fontWeight='600' variant='h4' sx={{mt:{sx:0, lg:'8rem'} ,
           fontFamily:'Work Sans' }}
-          mb= '50px' textAlign='center' textDecoration='capitalize'>
+          mb= '2rem' textAlign='center' textDecoration='capitalize'>
           Amazing exercises you should add to your routine.
          </Typography>
      </ThemeProvider>
 
-     <Box position="relative" mb= '5rem' >
-      <TextField sx={{ input: { fontWeight: '500', borderRadius:'40px'   }, 
-       width: { lg: '50rem', xs: '75vw'   }, color:'#753422' , bgColor:'#F5EFE6',
+     <Box position="relative" mb= '5rem' height='min-content' >
+      <TextField sx={{ input: { fontWeight: '500' }, 
+       width: { lg: '60vw', xs: '80vw'   }, color:'#753422' , bgColor:'#F5EFE6', fontSize:'.8rem'
        }} height='76px'
         value={search}
         onChange={(e)=> setSearch(e.target.value.toLowerCase())}
@@ -86,7 +86,7 @@ theme = responsiveFontSizes(theme);
     '&:hover':{bgcolor:'#B05B3B'},
     textTransform:'capitalize',
     width: { lg:'175px', xs:'80px' },
-    fontSize: {lg: '20px', xs:'14px'},
+    fontSize: {lg: '1.2rem', xs:'.9rem'},
     height:'56px',
     position:'absolute',
     right: '0'

@@ -66,7 +66,7 @@ const HeroBanner = () => {
       <img src={ Logo } alt="" />
       </Typography> */}
       <div>
-      <img alt='hero-banner' className='hero-banner-img' src={HeroBannerImage} loading='lazy'  />
+      <img alt='hero-banner' className='hero-banner-img' src={HeroBannerImage}  />
       </div>
     </Box>
   )
