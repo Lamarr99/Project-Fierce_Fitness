@@ -46,6 +46,5 @@ if (!exerciseDetail) return <div>No Data</div>;
       <ExerciseVideos exerciseVideos={exerciseVideos} name={exerciseDetail.name} />
       <SimilarExercises targetMuscleExercises={targetMuscleExercises}  equipmentExercises={equipmentExercises} />
     </Box>
-  )
-;}
+  );}
 export default ExerciseDetail
